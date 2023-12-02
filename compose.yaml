@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.compose
+    ports:
+      - "8000:5000"
+  redis:
+    image: "redis:7.0-alpine"
